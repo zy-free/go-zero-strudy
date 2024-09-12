@@ -1,9 +1,9 @@
-Name: member-api
+Name: commnet-api
 Version: v1.0.0
 Host: 0.0.0.0
-Port: 8000
-Member:
+Port: 8888
+Comment:
   Etcd:
     Hosts:
       - 127.0.0.1:2379
-    Key: member.rpc.test
+    Key: comment.rpc

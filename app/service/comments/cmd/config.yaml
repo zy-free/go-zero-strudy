@@ -1,12 +1,12 @@
-Name: member.rpc.test
+Name: comment.rpc
+ListenOn: 127.0.0.1:8080
 Version:
-ListenOn: 127.0.0.1:8002
 Etcd:
   Hosts:
   - 127.0.0.1:2379
-  Key: member.rpc.test
+  Key: comment.rpc
 DataSource: root:root@tcp(localhost:3306)/gozero?loc=Local&parseTime=true&charset=utf8mb4&collation=utf8mb4_unicode_ci
-MemberTable: member
-FavoriteTable: favorite
+CommentTable: comments
 Cache:
-  - Host: localhost:6379
+  - Host: 127.0.0.1:6379
+    Type: node
